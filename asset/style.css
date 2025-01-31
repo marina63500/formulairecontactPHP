@@ -1,0 +1,70 @@
+h1{   
+   text-align: center; 
+   margin: 20px;
+   margin-bottom: 30px;
+   
+}
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 0;
+    min-height: 100vh; 
+}
+
+form{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    margin:auto;  
+    gap: 10px;
+    font-size: large;    
+}
+
+input{
+    width: 40vw;
+    height: 5vh;
+    float: center;    
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    
+      
+}
+label{
+    display:flex;
+    justify-content: center;
+    /* float:center; */
+    width:150px;
+    font-weight: bold;
+    font-size: xx-large;     
+    gap: 10px;    
+    padding: 5px
+}
+    
+button{
+    border-radius: 10px;
+    background-color: hsl(240, 12%, 80%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    cursor: pointer;
+} 
+
+select{
+    cursor: pointer;
+    border: 2px  solid black;
+    border-radius: 10px;
+    width: 30vh;
+    height: 5vh;
+    background-color:hsl(240, 12%, 80%) ;
+    text-align: center;
+}
+
+textarea{
+    width: 40vw;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
