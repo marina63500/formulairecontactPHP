@@ -1,0 +1,19 @@
+{
+    "name": "formulaire/php",
+    "description": "formulaire de contact php",
+    "autoload": {
+        "psr-4": {
+            "Formulaire\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marina63500",
+            "email": "mar.59@hotmail.fr"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

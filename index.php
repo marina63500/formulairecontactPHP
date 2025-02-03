@@ -11,7 +11,7 @@
 <body>
     <h1><?php echo "Formulaire de contact"?></h1>
 
-    <form  method= "post"  action="" >
+    <form  method= "post"  action="traitement.php" >
 
         <label for= "nom" >Nom : </label> 
         <input id = "nom" type="text" name="nom" placeholder="Entrer votre nom"/>
