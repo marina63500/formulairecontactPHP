@@ -39,8 +39,8 @@ $Message = $_POST['message'];
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    //Server settings                                               SMTP::DEBUG_SERVER;  
+    $mail->SMTPDebug = SMTP::DEBUG_OFF;           // off enleve tous les logs envoyées   //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = $_ENV['MAIL_HOST'];                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -50,7 +50,7 @@ try {
     $mail->Port       =$_ENV['MAIL_PORT'];                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom($Emailfrom, $Nom);
+    $mail->setFrom($Emailfrom, $Nom,$Prenom);
     $mail->addAddress($_ENV['EmailTo'], 'admin');     //Add a recipient
     $mail->addAddress('ellen@example.com');               //Name is optional
     $mail->addReplyTo('info@example.com', 'Information');

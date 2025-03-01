@@ -12,7 +12,7 @@ Mailtrap est utilisé comme service SMTP pour tester l'envoi des emails en toute
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-- PHP (https://www.php.net/) installé sur votre machine.(v 8.3.&)
+- PHP (https://www.php.net/) installé sur votre machine.j'ai travaillé avec la version php(v 8.3.14)
 - Composer (https://getcomposer.org/) pour gérer les dépendances PHP.(gestionnaire de paquets)
 - Un compte Mailtrap (https://mailtrap.io/) pour récupérer les informations SMTP.
 
@@ -29,28 +29,29 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 sur le terminal:composer install
 
 3. création d'un dossier .env(variable d'environnement),ou je crée des variables qui reprennent mes données à masquer
-MAIL_HOST = 'sandbox.smtp.mailtrap.io'
-MAIL_USERNAME = "b9091b0c661b49"
-MAIL_PASSWORD = '78ca2602cbacdc'
-MAIL_PORT = '2525'
+
+MAIL_HOST = ' '
+MAIL_USERNAME = " "
+MAIL_PASSWORD = ' '
+MAIL_PORT = ''
 
 EmailTo = "lesportsenior@hotmail.fr"
 
-création d'un .env example pour masquer les données et ce sont celles là à modifier.
+-création d'un .env example pour masquer les données et ce sont celles là à modifier.
 
 
-4.Utilisation
+4. Utilisation
 Démarrez le serveur PHP :
 
-Ouvrez votre navigateur et remplisser le formuler de contact.
+Ouvrir votre navigateur et remplir le formulaire de contact.
 
-Remplissez le formulaire avec les informations nécessaires (nom,prénom,email,objet, message).
+Remplir le formulaire avec les informations nécessaires (nom,prénom,email,objet, message).
 
 soumettre le formulaire , un email est envoyé via Mailtrap pour test.
 
 
 
-5.Structure du Projet
+5. Structure du Projet
 
 création de feuilles pour projet:
 
@@ -58,7 +59,7 @@ index.php : page principale contenant le formulaire de contact.
 
 traitement.php : script qui traite les données du formulaire et envoie l'email.
 
-(test.php : Un script de test pour vérifier l'envoi d'email.)pour moi me souvenir à ne pas prendre en compte dans le read me.
+(test.php : Un script de test pour vérifier l'envoi d'email.)pour  me souvenir à ne pas prendre en compte dans le read me.
 
 style.css: feuille CSS pour le style du formulaire.
 
